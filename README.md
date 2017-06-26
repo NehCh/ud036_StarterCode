@@ -2,7 +2,7 @@
 This a a website that allows the user to view movie trailers of some of the All Time Hits in Animated Movies.
 
 # Prerequisites
-In order to be able to view the website and run the code one needs to have Python installed on their machines. Use this link for guidelines on how to install Python on your machines.
+In order to be able to view the website and run the code one needs to have Python installed on their machines. Use https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi for downloading Python on your machine.
 
 # Steps to view the code
 1. Clone a copy of the "media.py", "entertainment_centre.py" and "fresh_tomatoes.py" files on your system
