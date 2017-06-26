@@ -9,12 +9,12 @@ In order to be able to view the website and run the code one needs to have Pytho
 2. To view the code one may use the Python IDLE or any other Editor
 
 # Overview of the code:
-1. The file "media.py" has defined a data structure, where Movie is a class defining the parameters as required for each movie.
-2. The file "entertainment_centre.py" has multiple instances of that Python Class to represent the favorite movies; grouped all the instances together in a list, and then passed this list to a function open_movies_page() which is defined in "fresh_tomatoes.py"
+1. The file "media.py" has defined a data structure, where Movie is a class and the contructor is initializing the instance variables for each object. These instance variables are common across different movies. So here we are creating the prototype of what data would be displayed for every movie on the webpage.
+2. The file "entertainment_centre.py" has multiple instances of Class Movie that represent the different movies;  groups all the instances together in a list, and then passes this list to a function open_movies_page() which is defined in "fresh_tomatoes.py"
 Each instance passes the Title, Storyline, Poster and Youtube URL of the movie to the constructor that gets called when the object gets instantiated.
-3. The file "fresh_tomatoes.py" defines the function open_movies_page() and the various styling(CSS) and layout(HTML) aspectsof the webpage.
-
-Note: fresh_tomatoes.py and media.py both have been imported into entertainment_centre.py using import statements but are not a part of the Python Standard Library.
+This is where we are creating the actual objects, i.e. movies that we want to display along with the data.
+3. The file "fresh_tomatoes.py" defines the function open_movies_page() and the various styling(CSS) and layout(HTML) aspects of the webpage.
+When the function open_movies_page is called with the list of objects, that creates an HTML file which will display all of the favorite movies
 
 # Steps to execute the code
 1. Make sure that the three files are present under the same Folder in the Python directory in your system.
@@ -23,7 +23,7 @@ Note: fresh_tomatoes.py and media.py both have been imported into entertainment_
 4. This should launch the Python Shell
 5. Also, it would lauch the Movie Trailer Website.
 
-Alternatively, one can also launch the website directly from the fresh_tomatoes.html file that would be created on successfully running the code once using the above steps.
+Alternatively, one can also launch the website directly from the fresh_tomatoes.html file that would be created in the Folder where fresh_movies.py is present, on successfully running the code once using the above steps.
 
 # Expected result:
 The website should list out a total of 6 movies, and on clicking on each, user should be able to view the trailer of that movie. 
